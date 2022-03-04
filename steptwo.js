@@ -4,7 +4,7 @@
 const addToZero = (arr) =>{
     for(i = 0; i < arr.length; i++){
         for(n = 0; n < arr.length; n++){
-            if(arr[i] + arr[n] === 0){
+            if(i !== n && arr[i] + arr[n] === 0){
                 return true
             }
         }
@@ -18,7 +18,9 @@ const addToZero = (arr) =>{
 //Spacetime:O(n)
 const onlyUniqueChars = (str) => {
     for(i = 0; i < str.length - 1; i++){
-        if(str.includes(str[i], i + 1)) {return false}
+        if(str.includes(str[i], i + 1)) {
+            return false
+            }
         }
     return true
 }
