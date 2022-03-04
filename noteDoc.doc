@@ -1,0 +1,35 @@
+Notes
+    Step 1 - Question 2
+    Array	    Insert	        Append
+extraLargeArray	947.175895 ms	3.792129 ms
+largeArray	    7.243 ms	    619.589 μs
+mediumArray	    163.727 μs	    156.49 μs
+smallArray	    51.298 μs	    107.425 μs
+tinyArray	    36.74 μs	    92.184 μs
+
+    Results for the extraLargeArray
+    insert 947.175895 ms
+    append 3.792129 ms
+
+    Step 1 - Question 3
+    Results for the largeArray
+    insert 7.243 ms
+    append 619.589 μs
+
+    Results for the mediumArray
+    insert 163.727 μs
+    append 156.49 μs
+
+    Results for the smallArray
+    insert 51.298 μs
+    append 107.425 μs
+
+    Results for the tinyArray
+    insert 36.74 μs
+    append 92.184 μs
+
+    Step 1 - Question 4
+    The pattern I see is that the smaller the array the quicker the functions run. The append functions has better scaling because as you increase the size of the array it is more constant in the size that it goes up. The insert function time goes up more exponentially.
+
+    Step 1 - Question 5 - Extra Credit
+    unshift() increments all of the elements that are already in the array. push() just inserts an element at the end of the array, so it doesnt need to change the elements index. 
